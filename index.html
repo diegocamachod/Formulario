@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba 2 Diego</title>
+</head>
+
+<body>
+  <h1>Prueba 2 Diego</h1>
+
+  <form id="formulario">
+    <div>
+      Metodo de pago
+      <label for="efectivo">Efectivo</label>
+      <input id="efectivo" type="radio" name="tType" value="Efectivo" required>
+      <label for="tarjeta">Tarjeta</label>
+      <input id="tarjeta" type="radio" name="tType" value="Tarjeta" required>
+    </div>
+    <br>
+    <div>
+      <label for="producto">Producto</label>
+      <input id="producto" name="producto" type="text" onInput="validarInput()" placeholder="Ingrese un producto" required >
+    </div>
+    <br>
+    <div>
+      <label for="monto">Monto</label>
+      <input id="monto" name="monto" type="number" placeholder="Cantidad a pagar" required>
+    </div>
+    <br>
+    <div>
+      <label for="categoria">Categoria</label>
+      <input id="categoria" name="categoria" type="text" placeholder="Tipo de producto" required>
+    </div>
+    <div>
+      <button id="btn">Enviar</button>  
+    </div>
+  </form>
+
+  <div>
+    <table id="Table">
+      <tr>
+        <th>F/Pago</th>
+        <th>Producto</th>
+        <th>Monto</th>
+        <th>Categoria</th>
+      </tr>
+    </table>
+  </div>
+  <script src="codigo.js"></script>
+</body>
+</html>
